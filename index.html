@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Gestion Stock</title>
+</head>
+<body>
+    <div class="grud">
+
+     <div class="titre_du_siteweb">
+    <h1>GRUD</h1>
+    <h2>Product Management System</h2>
+    </div>
+
+    
+    <input type="texte" placeholder="title" id="title">
+
+
+    <div id="second_filder">
+    <input onkeyup="totalP()" type="number" placeholder="price" id="price">
+    <input onkeyup="totalP()" type="number" placeholder="taxes" id="taxes">
+    <input onkeyup="totalP()" type="number" placeholder="ads" id="ads">
+    <input onkeyup="totalP()" type="number" placeholder="discount" id="discount">
+    <samp id="total" >32541</samp>
+    </div>
+
+    <input type="texte" placeholder="count" id="count">
+    <input type="texte" placeholder="category" id="category">
+
+
+
+    <button id="create">Create</button>
+    <input type="texte" placeholder="search" id="search">
+    
+    <div class="searching">
+        <button id="search1" onclick="activate_titre()">Search By Title</button>
+        <button id="search1" onclick="activate_category()">Search By Category</button>
+    </div>
+    <div id="delete_all">
+    </div>
+    <table id="head1">
+        <tr>
+            <th >ID</td>
+            <th >TITLE</td>
+            <th >PRICE</td>
+            <th >TAXES</td>
+            <th >ADS</td>
+            <th >DISCOUNT</td>
+            <th >TOTAL</td>
+            <th >CATEGORY</td>
+            <th >UPDATE</td>
+            <th >DELETE</td>
+        </tr>
+        <tbody id="tbody">
+        </tbody>
+    </table>
+
+
+
+
+</div>
+<script src="relations.js"></script>
+</body>
+</html>
